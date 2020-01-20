@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: "Helvetica Light";
-  src: url("fonts/HelveticaLt.ttf") format("truetype");
+  src: url("fonts/HelveticaLtObl.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -40,9 +40,11 @@ a {
 }
 a:link,
 a:visited {
+  text-decoration: none;
 }
 a:active,
 a:hover {
+  text-decoration: none;
 }
 /* ====================================================== */
 /* HEADER CSS */
@@ -52,7 +54,7 @@ header {
 }
 .navbar {
   padding: 0;
-  padding-top: 47px;
+  padding-top: 48px;
 }
 .main-menu {
   list-style: none;
@@ -63,6 +65,15 @@ header {
   text-transform: uppercase;
   padding: 0 20px;
   color: #fff;
+
+  display: block;
+  line-height: 42px;
+}
+.main-menu a.active::after {
+  content: "";
+  height: 5px;
+  background-color: #fff;
+  display: block;
 }
 .main-title {
   font-weight: 700;
@@ -72,16 +83,21 @@ header {
   line-height: 60px;
   color: #fff;
 }
+
 .hero-content {
   padding-top: 135px;
+  overflow: hidden;
+}
+.hero-row {
+  position: relative;
 }
 .left-banner {
   max-width: 558px;
 }
 .right-banner {
-  background: url("imgs/iphone.png") no-repeat top center/cover;
-  max-width: 410px;
-  margin-left: auto;
+  top: -26px;
+  position: absolute;
+  right: -75px;
 }
 .banner-description {
   font-family: "HelveticaNeue Thin";
@@ -95,4 +111,56 @@ header {
   -ms-hyphens: auto;
   hyphens: auto;
   width: 90%;
+}
+
+/* ====================================================== */
+/* App Section */
+/* ====================================================== */
+.app-features-container {
+  padding-top: 72px;
+  padding-bottom: 109px;
+}
+.secondary-title {
+  text-transform: uppercase;
+  font-size: 52px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  color: #8a8a8a;
+}
+
+.app-description {
+  font-family: "Helvetica Light", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 28px;
+  font-weight: 400;
+}
+.app-item {
+  text-align: center;
+}
+.app-item-container {
+  padding-top: 58px;
+}
+.app-item h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  color: #1a1a1a;
+  padding-top: 32px;
+}
+.app-item p {
+  font-family: "Helvetica Light", sans-serif;
+  font-size: 18px;
+  color: #646464;
+  line-height: 26px;
+  margin: 0 auto;
+  width: 80%;
+  hyphens: auto;
+  padding-top: 29px;
 }
