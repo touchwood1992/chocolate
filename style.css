@@ -1,6 +1,6 @@
 :root {
-  /* --primary-bg:
-    --secondary-bg: */
+  --button-bg: #282828;
+  /* --secondary-bg: */
 }
 * {
   margin: 0;
@@ -45,6 +45,26 @@ a:visited {
 a:active,
 a:hover {
   text-decoration: none;
+  color: #333;
+}
+.site-btn,
+.site-btn:link,
+.site-btn:visited {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  padding: 21px 35px;
+  background-color: var(--button-bg);
+  display: inline-block;
+  border-radius: 50px;
+}
+.site-btn::hover,
+.site-btn:active {
+  color: #fff;
+}
+.site-btn--download {
+  margin-top: 31px;
+  margin-bottom: 66px;
 }
 /* ====================================================== */
 /* HEADER CSS */
