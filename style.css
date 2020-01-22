@@ -213,6 +213,7 @@ header {
   background-position: center top;
   background-repeat: no-repeat;
   padding-top: 185px;
+  padding-bottom: 172px;
 }
 .bignose h3 {
   color: #fff;
@@ -233,4 +234,64 @@ header {
   margin-bottom: 0;
   padding-top: 26px;
   width: 400px;
+}
+
+/* ====================================================== */
+/* Home Footer Section */
+/* ====================================================== */
+
+.home-footer {
+  background-color: #2e2e38;
+  padding-top: 122px;
+  padding-bottom: 151px;
+  color: #fff;
+}
+.footer-logo {
+  display: block;
+}
+.home-footer p {
+  margin-bottom: 0;
+}
+.home-footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 57px 0 18px;
+}
+.home-footer .popular-posts {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 230px;
+}
+.home-footer .popular-posts li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+.home-footer .popular-posts li:last-child {
+  padding-bottom: 0;
+}
+.home-footer .popular-posts li::before {
+  content: "";
+  height: 41px;
+  width: 55px;
+  background-color: #e74c3c;
+  flex: 0 0 55px;
+  margin-right: 15px;
+}
+.home-footer .popular-posts li span {
+  flex: 1;
+  line-height: 18px;
+}
+p.about-description {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+/* ====================================================== */
+/* Site Footer Section */
+/* ====================================================== */
+footer {
+  display: none;
 }
