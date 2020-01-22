@@ -89,7 +89,7 @@ a:hover {
 /* HEADER CSS */
 /* ====================================================== */
 header {
-  background: url("imgs/hero-1.png") no-repeat top center/cover;
+  background: url("imgs/hero.jpg") no-repeat top center/cover;
 }
 .navbar {
   padding: 0;
