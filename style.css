@@ -355,3 +355,17 @@ footer .footer-container {
   margin: 0 23px;
   vertical-align: middle;
 }
+
+/* ====================================================== */
+/* Animations */
+/* ====================================================== */
+.o-hidden {
+  overflow: hidden;
+}
+.negetive-z {
+  position: relative;
+  z-index: -5;
+}
+.right-banner.animated.bounceInUp {
+  animation-duration: 2s;
+}
