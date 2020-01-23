@@ -15,7 +15,6 @@ const uielements = (function() {
       effect: "animated fadeInUp",
       offset: "75%"
     },
-    ,
     {
       selector: "#js-fade-in-animate",
       effect: "animated fadeIn",
