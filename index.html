@@ -81,7 +81,7 @@
               croissant.
             </p>
             <div class="row app-item-container o-hidden">
-              <div class="col-md-4 animated fadeInLeft">
+              <div class="col-md-4 do-animate" id="js-fade-left-animate">
                 <div class="app-item">
                   <img src="imgs/scalable.png" alt="scalable" />
                   <h3>scalable</h3>
@@ -92,7 +92,10 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 animated fadeInUp negetive-z">
+              <div
+                class="col-md-4 negetive-z do-animate"
+                id="js-fade-up-animate"
+              >
                 <div class="app-item">
                   <img src="imgs/instant.png" alt="instant" />
                   <h3>instant</h3>
@@ -103,7 +106,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 animated fadeInRight">
+              <div class="col-md-4 do-animate" id="js-fade-right-animate">
                 <div class="app-item">
                   <img src="imgs/something.png" alt="scalable" />
                   <h3>something</h3>
@@ -120,7 +123,7 @@
 
         <!-- Big nose section -->
 
-        <section class="bignose animated fadeIn">
+        <section class="bignose do-animate" id="js-fade-in-animate">
           <div class="container">
             <h3>
               <span>Chocolate</span> pudding dessert jelly <span>fruit</span
@@ -136,8 +139,8 @@
 
         <!-- HOME Footer Section -->
 
-        <section class="home-footer animated fadeInUp">
-          <div class="container">
+        <section class="home-footer">
+          <div class="container do-animate" id="js-fade-up2-animate">
             <a href="" class="footer-logo"
               ><img src="imgs/logo.png" alt="Logo"
             /></a>
@@ -197,5 +200,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
