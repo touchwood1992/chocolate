@@ -255,7 +255,8 @@ header {
 .home-footer h3 {
   font-size: 20px;
   font-weight: 700;
-  padding: 57px 0 18px;
+  padding: 57px 0 28px;
+  margin: 0;
 }
 .home-footer .popular-posts {
   font-size: 15px;
@@ -285,13 +286,72 @@ header {
   flex: 1;
   line-height: 18px;
 }
+
+p.sedlex-title {
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.sedlex-ago {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  padding-top: 4px;
+}
+.sedlex-description {
+  font-size: 15px;
+  width: 65%;
+  line-height: 18.5px;
+  padding-top: 22px;
+}
+.sedlex-followus {
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 20px;
+}
 p.about-description {
+  margin-top: -3px;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
+  font-size: 15px;
+  width: 80%;
+  line-height: 23px;
 }
+
 /* ====================================================== */
 /* Site Footer Section */
 /* ====================================================== */
 footer {
-  display: none;
+  background-color: #d7dedc;
+  padding: 34.5px 0;
+  color: #000;
+}
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.footer-left {
+  padding-left: 55px;
+  font-size: 25.5px;
+}
+.footer-right {
+  padding-right: 57px;
+  margin-left: auto;
+  display: flex;
+}
+.footer-right img {
+  display: inline-block;
+  padding: 0 19px;
+}
+.footer-right img:last-child {
+  padding-right: 0;
+}
+.footer-left span::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 19px;
+  background-color: #000000;
+  margin: 0 23px;
+  vertical-align: middle;
 }
