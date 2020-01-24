@@ -375,3 +375,75 @@ footer .footer-container {
 .do-animate.animated {
   opacity: 1;
 }
+
+/* ====================================================== */
+/* Media Queries */
+/* ====================================================== */
+@media (max-width: 480px) {
+  header .navbar {
+    padding-top: 10px;
+  }
+  ul.main-menu {
+    display: none;
+  }
+
+  .right-banner {
+    background-color: #fff;
+    padding-top: 20px;
+  }
+  .hero-content {
+    padding-top: 50px;
+  }
+  .right-banner {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .right-banner img {
+    width: 100%;
+  }
+  .main-title,
+  .secondary-title,
+  .bignose h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .banner-description {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .site-btn,
+  .site-btn:link,
+  .site-btn:visited {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  .bignose {
+    padding: 50px 0;
+  }
+
+  .bignose h3,
+  .bignose p {
+    width: 100%;
+  }
+  .container.footer-container {
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    padding: 0;
+  }
+  .footer-left {
+    font-size: 16px;
+    text-align: center;
+  }
+  .footer-right {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .footer-left span::after {
+    width: 0;
+    margin: 0;
+  }
+}
