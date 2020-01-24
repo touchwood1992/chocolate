@@ -379,7 +379,8 @@ footer .footer-container {
 /* ====================================================== */
 /* Media Queries */
 /* ====================================================== */
-@media (max-width: 480px) {
+
+@media (max-width: 767px) {
   header .navbar {
     padding-top: 10px;
   }
@@ -388,7 +389,6 @@ footer .footer-container {
   }
 
   .right-banner {
-    background-color: #fff;
     padding-top: 20px;
   }
   .hero-content {
