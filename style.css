@@ -29,7 +29,6 @@ body {
   font-family: "Montserrat", sans-serif;
   /* font-family: "Helvetica Light"; */
   color: #646464;
-  font-size: 100%;
   font-weight: 400;
   background-color: #fff;
   line-height: 1.5;
@@ -50,13 +49,13 @@ a:hover {
 .site-btn,
 .site-btn:link,
 .site-btn:visited {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
   font-weight: 700;
   padding: 21px 35px;
   background-color: var(--button-bg);
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 3.125rem;
 }
 .site-btn::hover,
 .site-btn:active {
@@ -74,7 +73,7 @@ a:hover {
   font-weight: 700;
   background-color: var(--primary-bg);
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   padding: 13px 32px;
   text-transform: uppercase;
 }
@@ -104,9 +103,8 @@ header {
   text-transform: uppercase;
   padding: 0 20px;
   color: #fff;
-
   display: block;
-  line-height: 42px;
+  line-height: 2.63rem;
 }
 .main-menu a.active::after {
   content: "";
@@ -170,8 +168,8 @@ header {
 
 .app-description {
   font-family: "Helvetica Light", sans-serif;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 1.375rem;
+  line-height: 2rem;
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -185,7 +183,7 @@ header {
   padding-top: 58px;
 }
 .app-item h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
   text-transform: uppercase;
@@ -195,9 +193,9 @@ header {
 }
 .app-item p {
   font-family: "Helvetica Light", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #646464;
-  line-height: 26px;
+  line-height: 1.625rem;
   margin: 0 auto;
   width: 80%;
   hyphens: auto;
@@ -229,8 +227,8 @@ header {
 .bignose p {
   font-family: "Helvetica Light", sans-serif;
   color: #585858;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   margin-bottom: 0;
   padding-top: 26px;
   width: 400px;
@@ -253,13 +251,13 @@ header {
   margin-bottom: 0;
 }
 .home-footer h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   padding: 57px 0 28px;
   margin: 0;
 }
 .home-footer .popular-posts {
-  font-size: 15px;
+  font-size: 0.94rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -284,27 +282,27 @@ header {
 }
 .home-footer .popular-posts li span {
   flex: 1;
-  line-height: 18px;
+  line-height: 1.125rem;
 }
 
 p.sedlex-title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.88rem;
   padding-top: 5px;
 }
 .sedlex-ago {
   font-family: "Open Sans", sans-serif;
-  font-size: 11px;
+  font-size: 0.69rem;
   padding-top: 4px;
 }
 .sedlex-description {
-  font-size: 15px;
+  font-size: 0.94rem;
   width: 65%;
-  line-height: 18.5px;
+  line-height: 1.16rem;
   padding-top: 22px;
 }
 .sedlex-followus {
-  font-size: 14px;
+  font-size: 0.88rem;
   font-weight: 700;
   padding-top: 20px;
 }
@@ -312,9 +310,9 @@ p.about-description {
   margin-top: -3px;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
-  font-size: 15px;
+  font-size: 0.94rem;
   width: 80%;
-  line-height: 23px;
+  line-height: 1.44rem;
 }
 
 /* ====================================================== */
@@ -332,7 +330,7 @@ footer .footer-container {
 }
 .footer-left {
   padding-left: 55px;
-  font-size: 25.5px;
+  font-size: 1.59rem;
 }
 .footer-right {
   padding-right: 57px;
@@ -367,7 +365,7 @@ footer .footer-container {
   z-index: -5;
 }
 .right-banner.animated.bounceInUp {
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 .do-animate {
   opacity: 0;
@@ -379,20 +377,80 @@ footer .footer-container {
 /* ====================================================== */
 /* Media Queries */
 /* ====================================================== */
+.mobile-menuicon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.mobile-menuicon span {
+  background: #fff;
+  height: 4px;
+  width: 40px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-menuicon span:first-child {
+  margin-bottom: 8px;
+}
+.mobile-menuicon span:last-child {
+  margin-top: 8px;
+}
+.mobile-menuicon.open span:nth-child(2) {
+  opacity: 0;
+}
 
-@media (max-width: 767px) {
+.mobile-menuicon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+.mobile-menuicon.open span:last-child {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 63.9375em) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .mobile-menuicon {
+    display: block;
+  }
   header .navbar {
-    padding-top: 10px;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 50;
   }
-  ul.main-menu {
-    display: none;
+  .main-menu {
+    top: 65px;
+    position: fixed;
+    transform: translate(-100%, 0px);
+    z-index: -500;
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+    color: #fff;
+    width: 80%;
+    left: 0;
+    flex-direction: column;
+    min-height: 100vh;
   }
-
+  body.openMenu ul.main-menu {
+    transform: translate(0, 0px);
+    z-index: 50;
+  }
   .right-banner {
     padding-top: 20px;
   }
   .hero-content {
-    padding-top: 50px;
+    padding-top: 110px;
   }
   .right-banner {
     position: relative;
@@ -405,18 +463,18 @@ footer .footer-container {
   .main-title,
   .secondary-title,
   .bignose h3 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   .banner-description {
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
   }
   .site-btn,
   .site-btn:link,
   .site-btn:visited {
     padding: 14px 20px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .bignose {
@@ -435,7 +493,7 @@ footer .footer-container {
     padding: 0;
   }
   .footer-left {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
   }
   .footer-right {

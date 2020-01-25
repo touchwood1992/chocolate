@@ -24,12 +24,23 @@ const uielements = (function() {
       selector: "#js-fade-up2-animate",
       effect: "animated fadeInUp",
       offset: "65%"
+    },
+    {
+      selector: "#js-banner-bounce-up",
+      effect: "animated bounceInUp",
+      offset: "100%"
     }
   ];
+
+  const MobileIcon = ".mobile-menuicon";
+  const MenuClass = ".main-menu";
 
   return {
     allUi: function() {
       return AllAnimateElements;
+    },
+    menu: function() {
+      return { icon: MobileIcon, menu: MenuClass };
     }
   };
 })();
@@ -50,6 +61,10 @@ const uicontroller = (function() {
   return {
     setAnimate: function(item) {
       executeAnimation(item);
+    },
+    toggleClassNow: function(ob, menu) {
+      $(ob).toggleClass("open");
+      $("body").toggleClass("openMenu");
     }
   };
 })();
@@ -58,10 +73,15 @@ const uicontroller = (function() {
 
 const appcontroller = (function(uiElement, uiController) {
   const allUi = uiElement.allUi();
+  const menu = uiElement.menu();
 
   function setInitially() {
     allUi.forEach((item, index) => {
       uicontroller.setAnimate(item);
+    });
+
+    $(menu.icon).on("click", function() {
+      uiController.toggleClassNow(this, menu);
     });
   }
 
